@@ -5,6 +5,7 @@ import { FAQ_ITEMS } from '@/constants';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { easeOut } from 'framer-motion';
 
 export function FAQSection() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
@@ -20,14 +21,17 @@ export function FAQSection() {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 10 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.4, ease: 'easeOut' },
+ const itemVariants = {
+  hidden: { opacity: 0, y: 10 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.4,
+      ease: easeOut, // ✅ replaces 'easeOut'
     },
-  };
+  },
+};
 
   return (
     <section className="relative bg-gradient-to-b from-blue-950/50 to-slate-950/50 py-16 sm:py-24 border-t border-blue-800/30">
