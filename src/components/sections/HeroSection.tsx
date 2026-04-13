@@ -55,14 +55,14 @@ export function HeroSection() {
           </motion.p>
 
           <motion.div variants={itemVariants} className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <Link href="#collab">
+            <Link href="#get-involved">
               <Button size="lg" className="gap-2">
-                Collab with us <ArrowRight size={18} />
+                Get Involved <ArrowRight size={18} />
               </Button>
             </Link>
-            <Link href="https://superteam.fun" target="_blank">
+            <Link href="#events">
               <Button size="lg" variant="secondary">
-                Visit global site
+                Explore Opportunities
               </Button>
             </Link>
           </motion.div>

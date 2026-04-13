@@ -23,7 +23,7 @@ export function FAQSection() {
 
 
   return (
-    <section className="relative bg-gradient-to-b from-blue-950/50 to-slate-950/50 py-16 sm:py-24 border-t border-blue-800/30">
+    <section id="faq" className="relative bg-gradient-to-b from-blue-950/50 to-slate-950/50 py-16 sm:py-24 border-t border-blue-800/30">
       <Container>
         {/* Header */}
         <motion.div

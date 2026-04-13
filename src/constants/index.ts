@@ -14,9 +14,10 @@ export const BRAND = {
 
 // Navigation
 export const NAV_LINKS = [
-  { label: 'Productions', href: '#productions' },
-  { label: 'Love & Respect', href: '#love' },
-  { label: 'Collab', href: '#collab' },
+  { label: 'What We Do', href: '#features' },
+  { label: 'Events', href: '#events' },
+  { label: 'Members', href: '#featured-members' },
+  { label: 'Get Involved', href: '#get-involved' },
   { label: 'Global', href: 'https://superteam.fun' },
 ];
 

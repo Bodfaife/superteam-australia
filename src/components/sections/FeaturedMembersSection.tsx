@@ -116,7 +116,7 @@ export function FeaturedMembersSection() {
 
 
   return (
-    <section className="relative bg-gradient-to-b from-slate-950/50 to-blue-950/50 py-16 sm:py-24 border-t border-blue-800/30">
+    <section id="featured-members" className="relative bg-gradient-to-b from-slate-950/50 to-blue-950/50 py-16 sm:py-24 border-t border-blue-800/30">
       <Container>
         {/* Header */}
         <motion.div
