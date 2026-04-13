@@ -2,6 +2,7 @@
 
 import { Container } from '@/components/common';
 import { motion } from 'framer-motion';
+import { itemVariants } from '@/animations/variants';
 
 const ECOSYSTEM_PARTNERS = [
   { name: 'Phantom', logo: '🔮' },
@@ -30,14 +31,6 @@ export function PartnersSection() {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.4, ease: 'easeOut' },
-    },
-  };
 
   return (
     <section className="relative bg-gradient-to-b from-slate-950/50 to-blue-950/50 py-16 sm:py-24 border-t border-blue-800/30">

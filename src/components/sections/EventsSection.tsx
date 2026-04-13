@@ -4,6 +4,7 @@ import { Container, Card, Badge, Button } from '@/components/common';
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { itemVariants } from '@/animations/variants';
 
 // Sample events data
 const SAMPLE_EVENTS = [
@@ -54,17 +55,6 @@ export function EventsSection() {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-        ease: 'easeInOut' as const,
-      },
-    },
-  };
 
   return (
     <section id="events" className="relative bg-gradient-to-b from-blue-950/50 to-slate-950/50 py-16 sm:py-24 border-t border-blue-800/30">

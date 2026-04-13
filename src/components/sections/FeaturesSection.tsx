@@ -3,6 +3,7 @@
 import { Container, Card } from '@/components/common';
 import { FEATURES } from '@/constants';
 import { motion } from 'framer-motion';
+import { itemVariants } from '@/animations/variants';
 
 export function FeaturesSection() {
   const containerVariants = {
@@ -16,14 +17,6 @@ export function FeaturesSection() {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
-    },
-  };
 
   return (
     <section id="features" className="relative bg-gradient-to-b from-blue-950/50 to-slate-950/50 py-16 sm:py-24 border-t border-blue-800/30">

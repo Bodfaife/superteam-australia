@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     'Ecosystem',
     'Community',
   ],
+  metadataBase: new URL('https://australia.superteam.fun'),
   openGraph: {
     type: 'website',
     locale: 'en_AU',

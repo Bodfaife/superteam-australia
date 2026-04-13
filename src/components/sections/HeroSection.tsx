@@ -4,6 +4,7 @@ import { Button, Container } from '@/components/common';
 import Link from 'next/link';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { itemVariants } from '@/animations/variants';
 
 export function HeroSection() {
   const containerVariants = {
@@ -17,14 +18,6 @@ export function HeroSection() {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.8, ease: 'easeOut' },
-    },
-  };
 
   return (
     <section id="hero" className="relative overflow-hidden bg-slate-950/95 pb-24 pt-20">

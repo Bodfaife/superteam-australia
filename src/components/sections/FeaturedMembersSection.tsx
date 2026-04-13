@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { Member } from '@/types';
+import { itemVariants } from '@/animations/variants';
 
 // Sample featured members
 const FEATURED_MEMBERS: Member[] = [
@@ -112,14 +113,7 @@ export function FeaturedMembersSection() {
     },
   };
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: 'easeOut' },
-    },
-  };
+
 
   return (
     <section className="relative bg-gradient-to-b from-slate-950/50 to-blue-950/50 py-16 sm:py-24 border-t border-blue-800/30">
