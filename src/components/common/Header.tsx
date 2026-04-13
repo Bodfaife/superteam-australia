@@ -14,8 +14,12 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-3 text-white">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-primary-500 text-lg font-bold shadow-glow">
-              S
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-2xl bg-slate-950 shadow-glow">
+              <img
+                src="/superteam-australia-logo.jpg"
+                alt="Superteam Australia logo"
+                className="h-full w-full object-cover"
+              />
             </div>
             <div className="hidden sm:block">
               <div className="text-sm font-semibold text-white">{BRAND.name}</div>
